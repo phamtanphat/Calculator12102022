@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
+        android:id="@+id/edit_text_number1"
         android:layout_marginTop="10dp"
         android:maxLength="5"
         android:inputType="number"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
+        android:id="@+id/edit_text_number2"
         android:layout_marginTop="10dp"
         android:maxLength="5"
         android:inputType="number"
@@ -36,6 +38,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/text_view_result"
         android:textStyle="bold"
         android:textColor="#9C27B0"
         android:textSize="20sp"
@@ -52,12 +55,14 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/button_plus"
             android:textSize="20sp"
             android:text="+"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/button_minus"
             android:layout_marginLeft="100dp"
             android:textSize="20sp"
             android:text="-"
@@ -72,12 +77,14 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/button_multiplication"
             android:textSize="20sp"
             android:text="x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/button_division"
             android:layout_marginLeft="100dp"
             android:textSize="20sp"
             android:text="/"
