@@ -45,6 +45,31 @@ public class MainActivity extends AppCompatActivity{
                 tvResult.setText("Result: " + number1 + " + " + number2 + " = " + result);
             }
         });
+
+        btnDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String textNumber1 = edtNumber1.getText().toString();
+                String textNumber2 = edtNumber2.getText().toString();
+
+                if (textNumber1.isEmpty() || textNumber2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Bạn chưa nhập đủ thông tin", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                int number1 = Integer.parseInt(textNumber1);
+                int number2 = Integer.parseInt(textNumber2);
+
+                if (number2 == 0) {
+                    Toast.makeText(MainActivity.this, "Không chia với 0", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                float result = (float) number1 / (float) number2;
+                String outPut = String.format("Result: %d / %d = %.02f", number1, number2, result);
+                tvResult.setText(outPut);
+            }
+        });
     }
 
 }
